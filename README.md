@@ -47,3 +47,7 @@ curl -X POST [https://backend-ssci-cloudrun.onrender.com/addData](https://backen
     "humidity": 85
   }'
 ```
+
+
+## Déploiement GCP
+Projet géré sur Google Cloud Shell ().
