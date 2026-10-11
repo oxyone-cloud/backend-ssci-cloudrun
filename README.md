@@ -1,9 +1,25 @@
-<img width="640" height="521" alt="495391021_665448673000571_4748866864739225710_n-3" src="https://github.com/user-attachments/assets/6f0e8536-5dff-4e29-a55c-fd968adb0e21" />
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0000--1250--8205-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-1250-8205)
+<p align="center">
+  <img width="640" alt="OxyONE SSCI Cloud Backend" src="https://github.com/user-attachments/assets/6f0e8536-5dff-4e29-a55c-fd968adb0e21" />
+</p>
 
-# 🧊 OxyONE / SSCI Cloud Backend
+<p align="center">
+  <a href="https://orcid.org/0009-0000-1250-8205">
+    <img src="https://img.shields.io/badge/ORCID-0009--0000--1250--8205-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID"/>
+  </a>
+  <img src="https://img.shields.io/badge/Startup_Labellisée-Algérie-blue?style=flat&logo=rocket&logoColor=white" alt="Startup Labellisée"/>
+</p>
 
-Backend Node.js / Express déployé sur Render pour la collecte et la gestion des données de capteurs IoT de la chaîne du froid.
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
+  <img src="https://img.shields.io/badge/Render-%2346E3B7.svg?style=for-the-badge&logo=render&logoColor=white" alt="Render"/>
+  <img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud Datastore"/>
+</p>
+
+# 🧊 OxyONE / SSCI Cloud Backend (`backend-ssci-cloudrun`)
+
+Backend Node.js / Express déployé sur Render pour la collecte, le traitement et la gestion des données de capteurs IoT de la chaîne du froid.
+
+---
 
 ## 📐 Architecture du Système
 
@@ -27,32 +43,3 @@ graph TD
     App -->|HTTPS POST| AddData
     Web -->|HTTPS GET| Root
     AddData -->|Save Entity| Datastore
-```
-
-## 🔌 API Endpoints
-
-| Méthode | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/` | Healthcheck & statut de l'API |
-| `GET` | `/helloWorld` | Test rapide de connectivité |
-| `POST` | `/addData` | Enregistrement d'un relevé de température dans GCP Datastore |
-
-## 🧪 Exemple de requête POST `/addData`
-
-```bash
-curl -X POST [https://backend-ssci-cloudrun.onrender.com/addData](https://backend-ssci-cloudrun.onrender.com/addData) \
-  -H "Content-Type: application/json" \
-  -d '{
-    "sensor_id": "COLD-ROOM-01",
-    "temperature": 3.8,
-    "humidity": 85
-  }'
-```
-
-
-## Déploiement GCP
-Projet géré sur Google Cloud Shell ().
-
-
-## Déploiement GCP
-Projet géré sur Google Cloud Shell ().
