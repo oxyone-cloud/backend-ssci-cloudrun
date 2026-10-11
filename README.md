@@ -18,6 +18,9 @@
 # 🧊 OxyONE / SSCI Cloud Backend (`backend-ssci-cloudrun`)
 
 Backend Node.js / Express déployé sur Render pour la collecte, le traitement et la gestion des données de capteurs IoT de la chaîne du froid.
+<a href="https://www.codehype.ai/product/oxyone?utm_source=codehype_badge" target="_blank" rel="noopener noreferrer">
+  <img src="https://www.codehype.ai/badges/oxyone.svg?variant=find-us&v=20" alt="Featured on CodeHype" width="180" height="65" loading="lazy" decoding="async" style="display:inline-block;border:0;width:100%;max-width:180px;height:auto;max-height:65px;" />
+</a>
 
 ---
 
